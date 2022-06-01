@@ -1,11 +1,26 @@
 import Vue from "vue";
-import Vuex from "vuex";
+import Vuex, { StoreOptions } from "vuex";
+import jsonCities from "../../city.list.json";
 
 Vue.use(Vuex);
 
+
+
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    selectedCities: [],
+    weatherOfCities: [],
+    cities: jsonCities,
+  },
+  mutations: {
+  },
   actions: {},
-  modules: {},
+  getters: {
+    getCities(state) {
+      return state.cities;
+    },
+    getSelectedCities(state) {
+      return state.selectedCities;
+    },
+  },
 });
