@@ -2,7 +2,9 @@
   <v-app>
     <header>
       <v-row class="justify-center">
-      <span style="font-size: 40px;color: white;margin: 15px 0">Weather <b style="color: black">Forecast</b></span>
+        <span style="font-size: 40px; color: white; margin: 15px 0"
+          >Weather <b style="color: black">Forecast</b></span
+        >
       </v-row>
     </header>
     <login-dialog />
@@ -30,5 +32,12 @@ export default Vue.extend({
     rgba(103, 111, 205, 1) 41%,
     rgba(50, 58, 164, 1) 81%
   );
+}
+.v-main{
+  border: 5px solid darkblue;
+  background-color: lightsteelblue;
+  background-image: url(images/city.png);
+  background-size: 100%;
+  margin: 20px;
 }
 </style>

@@ -1,10 +1,9 @@
 import Vue from "vue";
-import Vuex, { StoreOptions } from "vuex";
+import Vuex from "vuex";
 import jsonCities from "../../city.list.json";
+import { City, WeatherOfCity } from "@/store/types";
 
 Vue.use(Vuex);
-
-
 
 export default new Vuex.Store({
   state: {
@@ -12,8 +11,7 @@ export default new Vuex.Store({
     weatherOfCities: [],
     cities: jsonCities,
   },
-  mutations: {
-  },
+  mutations: {},
   actions: {},
   getters: {
     getCities(state) {
