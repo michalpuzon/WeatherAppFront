@@ -22,7 +22,7 @@
 <script lang="ts">
 import Vue from "vue";
 import LoginDialog from "@/components/LoginDialog.vue";
-import SelectedCities from "@/components/SelectedCities.vue";
+import SelectedCities from "@/views/SelectedCities.vue";
 
 export default Vue.extend({
   name: "App",
@@ -51,17 +51,22 @@ export default Vue.extend({
   font-size: 40px;
   color: white;
   margin: 15px 0 0 0;
+  transition: 1s;
 }
 
 .title-span:hover {
   transition: 1s;
   font-size: 45px;
-  font-family: "Bell MT", serif;
 }
 
 .description {
+  transition: 1s;
   color: white;
   font-size: 20px;
   font-family: "Bell MT", serif;
+}
+.description:hover {
+  font-size: 25px;
+  transition: 1s;
 }
 </style>

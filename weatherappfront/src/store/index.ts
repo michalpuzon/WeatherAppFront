@@ -8,7 +8,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     forecastWeatherOfCity: [],
-    selectedCities: [],
+    favoritesCities: [],
     weatherOfCities: [],
     cities: jsonCities,
   },
@@ -16,8 +16,8 @@ export default new Vuex.Store({
     setForecastWeatherOfCity(state, weather) {
       state.forecastWeatherOfCity = weather;
     },
-    setSelectedCities(state, cities) {
-      state.selectedCities = cities;
+    setFavoritesCities(state, cities) {
+      state.favoritesCities = cities;
     },
     setWeatherOfCities(state, weathers) {
       state.weatherOfCities = weathers;
@@ -26,13 +26,13 @@ export default new Vuex.Store({
   actions: {},
   getters: {
     getForecastWeatherOfCity(state){
-      return state.forecastWeatherOfCity
+      return state.forecastWeatherOfCity;
     },
     getCities(state) {
       return state.cities;
     },
-    getSelectedCities(state) {
-      return state.selectedCities;
+    getFavoritesCities(state) {
+      return state.favoritesCities;
     },
     getWeatherOfCities(state) {
       return state.weatherOfCities;
