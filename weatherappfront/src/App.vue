@@ -2,8 +2,13 @@
   <v-app>
     <header>
       <v-row class="justify-center">
-        <span style="font-size: 40px; color: white; margin: 15px 0"
+        <span class="title-span"
           >Weather <b style="color: black">Forecast</b></span
+        >
+      </v-row>
+      <v-row class="justify-center">
+        <span class="description"
+          >Choose cities and click one for more details</span
         >
       </v-row>
     </header>
@@ -25,7 +30,7 @@ export default Vue.extend({
 });
 </script>
 <style>
-#app{
+#app {
   background: rgb(103, 111, 205);
   background: radial-gradient(
     circle,
@@ -33,11 +38,30 @@ export default Vue.extend({
     rgba(50, 58, 164, 1) 81%
   );
 }
-.v-main{
+
+.v-main {
   border: 5px solid darkblue;
   background-color: lightsteelblue;
-  background-image: url(images/city.png);
   background-size: 100%;
   margin: 20px;
+  border-radius: 15px;
+}
+
+.title-span {
+  font-size: 40px;
+  color: white;
+  margin: 15px 0 0 0;
+}
+
+.title-span:hover {
+  transition: 1s;
+  font-size: 45px;
+  font-family: "Bell MT", serif;
+}
+
+.description {
+  color: white;
+  font-size: 20px;
+  font-family: "Bell MT", serif;
 }
 </style>

@@ -35,7 +35,12 @@
         </v-card>
       </div>
     </v-dialog>
-    <v-dialog transition="dialog-top-transition" v-model="errorAlert" max-width="600px" min-width="360px">
+    <v-dialog
+      transition="dialog-top-transition"
+      v-model="errorAlert"
+      max-width="600px"
+      min-width="360px"
+    >
       <v-alert type="error">Incorrect data entered</v-alert>
     </v-dialog>
   </div>
