@@ -36,8 +36,8 @@
       <v-dialog width="600px" v-model="informationDialog">
         <v-card width="600px">
           <v-card-title class="justify-center">{{ name }}</v-card-title>
-          <v-card-text>temp: {{ temp }}°C</v-card-text>
-          <v-card-text>humidity: {{ humidity }}%</v-card-text>
+          <v-card-text style="color: greenyellow">temp: {{ temp }}°C</v-card-text>
+          <v-card-text style="color: red">humidity: {{ humidity }}%</v-card-text>
           <v-card-text>pressure: {{ pressure }}hPa</v-card-text>
           <v-card-text>description: {{ description }}</v-card-text>
           <v-card-text>Wind speed: {{ windSpeed }}m/s</v-card-text>
