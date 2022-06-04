@@ -42,6 +42,7 @@ export default Vue.extend({
 .v-main {
   border: 5px solid darkblue;
   background-color: lightsteelblue;
+  background-image: url(./images/clouds.png);
   background-size: 100%;
   margin: 20px;
   border-radius: 15px;
